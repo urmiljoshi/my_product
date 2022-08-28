@@ -5,6 +5,8 @@ import Footer from './Component/Footer/Footer';
 import Home from './Cunteinar/Home/Home';
 import Detail from './Cunteinar/Detail/Detail';
 import Contact from './Cunteinar/Contact/Contact';
+import Checkout from './Cunteinar/Checkout/Checkout';
+import Cart from './Cunteinar/Cart/Cart';
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
     <Hedar />
     {/* <Home /> */}
     {/* <Detail /> */}
-    <Contact />
+    {/* <Contact /> */}
+    {/* <Checkout /> */}
+    <Cart />
     <Footer />
     </>
   );
