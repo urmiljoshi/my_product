@@ -7,17 +7,19 @@ import Detail from './Cunteinar/Detail/Detail';
 import Contact from './Cunteinar/Contact/Contact';
 import Checkout from './Cunteinar/Checkout/Checkout';
 import Cart from './Cunteinar/Cart/Cart';
+import Counter from './Cunteinar/counter/Counter';
 
 function App() {
   return (
     <>
-    <Hedar />
+    {/* <Hedar /> */}
     {/* <Home /> */}
     {/* <Detail /> */}
     {/* <Contact /> */}
     {/* <Checkout /> */}
-    <Cart />
-    <Footer />
+    {/* <Cart /> */}
+    <Counter />
+    {/* <Footer /> */}
     </>
   );
 }
