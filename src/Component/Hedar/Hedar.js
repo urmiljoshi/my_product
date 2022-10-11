@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Hedar(props) {
     return (
@@ -7,10 +8,10 @@ function Hedar(props) {
                 <div className="row bg-secondary py-1 px-xl-5">
                     <div className="col-lg-6 d-none d-lg-block">
                         <div className="d-inline-flex align-items-center h-100">
-                            <a className="text-body mr-3" href>About</a>
-                            <a className="text-body mr-3" href>Contact</a>
-                            <a className="text-body mr-3" href>Help</a>
-                            <a className="text-body mr-3" href>FAQs</a>
+                            <a className="text-body mr-3">About</a>
+                            <a className="text-body mr-3">Contact</a>
+                            <a className="text-body mr-3">Help</a>
+                            <a className="text-body mr-3">FAQs</a>
                         </div>
                     </div>
                     <div className="col-lg-6 text-center text-lg-right">
@@ -116,17 +117,17 @@ function Hedar(props) {
                             </button>
                             <div className="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                 <div className="navbar-nav mr-auto py-0">
-                                    <a href="index.html" className="nav-item nav-link active">Home</a>
+                                    <NavLink to={"/"} className="nav-item nav-link active">Home</NavLink>
                                     <a href="shop.html" className="nav-item nav-link">Shop</a>
-                                    <a href="detail.html" className="nav-item nav-link">Shop Detail</a>
+                                    <NavLink to={"/Detail"} className="nav-item nav-link">Shop Detail</NavLink>
                                     <div className="nav-item dropdown">
                                         <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown">Pages <i className="fa fa-angle-down mt-1" /></a>
                                         <div className="dropdown-menu bg-primary rounded-0 border-0 m-0">
-                                            <a href="cart.html" className="dropdown-item">Shopping Cart</a>
-                                            <a href="checkout.html" className="dropdown-item">Checkout</a>
+                                            <NavLink to={"/Cart"} className="dropdown-item">Shopping Cart</NavLink>
+                                            <NavLink to={"/Checkout"} className="dropdown-item">Checkout</NavLink>
                                         </div>
                                     </div>
-                                    <a href="contact.html" className="nav-item nav-link">Contact</a>
+                                    <NavLink to={"/Contact"} className="nav-item nav-link">Contact</NavLink>
                                 </div>
                                 <div className="navbar-nav ml-auto py-0 d-none d-lg-block">
                                     <a href className="btn px-0">

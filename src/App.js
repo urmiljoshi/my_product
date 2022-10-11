@@ -8,18 +8,30 @@ import Contact from './Cunteinar/Contact/Contact';
 import Checkout from './Cunteinar/Checkout/Checkout';
 import Cart from './Cunteinar/Cart/Cart';
 import Counter from './Cunteinar/counter/Counter';
+import { Route, Switch } from 'react-router-dom';
+import Layout from './Admin/Componets/Layout';
+import Shop from './Admin/Conteinars/Shop';
 
 function App() {
   return (
     <>
-    {/* <Hedar /> */}
-    {/* <Home /> */}
-    {/* <Detail /> */}
-    {/* <Contact /> */}
-    {/* <Checkout /> */}
-    {/* <Cart /> */}
-    <Counter />
-    {/* <Footer /> */}
+    {/* <Hedar />
+    <Switch>
+      <Route exact path={"/"}component={Home}/>
+      <Route exact path={"/Detail"}component={Detail}/>
+      <Route exact path={"/Contact"}component={Contact}/>
+      <Route exact path={"/Checkout"}component={Checkout}/>
+      <Route exact path={"/Cart"}component={Cart}/>
+    
+    </Switch>
+    
+     <Footer /> */}
+
+   <Layout>
+      <Switch>
+      <Route exact path={"/"}component={Shop}/>
+      </Switch>
+   </Layout>
     </>
   );
 }
